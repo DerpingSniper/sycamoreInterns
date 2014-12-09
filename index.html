@@ -1,0 +1,67 @@
+<!DOCTYPE HTML5>
+<HTML>
+    <HEAD>
+        <TITLE>Sycamore Interns</TITLE>
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <script src=http://code.jquery.com/jquery-1.11.0.min.js></script>
+        <script src=http://code.jquery.com/jquery-migrate-1.2.1.min.js></script>
+        <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css>
+        <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css>
+        <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js></script>
+
+        
+        <script>
+            $(document).ready(function(){
+                // Creates a new variable for the date
+                var d = new Date();
+
+                // Gets the month.
+                var month = d.getMonth();
+
+                // Changes colors based on the season            
+                if (month >= 10 || month < 1) {
+                    var stylesheet = "winter";              
+                } else if (month >= 1 && month < 4) {
+                    var stylesheet = "spring";             
+                } else if (month >= 4 && month < 7) {
+                    var stylesheet = "summer";   
+                } else if (month >= 7 && month < 10) {
+                    var stylesheet = "fall";                 
+                }
+
+                $('head').append('<link rel="stylesheet" type="text/css" href="styles/'+stylesheet+'.css">');
+            });
+        </script>
+    </HEAD>
+    <BODY>
+        
+        <!-- Navbar at the top of the screen. -->
+        <div class="navbar navbar-fixed-top">
+            <div class=container>
+                <a href=index.html class=navbar-brand><img src=pics/logo.png style="width: 51%; margin-top: -9px;"></a>
+                <button class=navbar-toggle data-toggle=collapse data-target=.navHeaderCollapse>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                </button>
+                <div class="collapse navbar-collapse navHeaderCollapse dropdown">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a>
+                        <li class="dropdown">
+                            <a href=# class=dropdown-toggle data-toggle=dropdown>Quick Guides <b class=caret></b></a>
+                            <ul class=dropdown-menu>
+                                <li><a href=guides/htmlGuide.html>HTML</a></li>
+                                <li><a href=guides/jsGuide.html>JavaScript</a></li>
+                                <li><a href=guides/cssGuide.html>CSS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="jumbotron text-center">
+            <h1>Greetings, Interns!</h1>
+        </div>
+    </BODY>
+</HTML>
