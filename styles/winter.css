@@ -4,4 +4,13 @@
 
 .jumbotron {
     margin-top: 75px;
+    background-color: rgb(178,181,189);
+}
+
+a {
+    color: #FFFFFF   
+}
+
+body {
+    background-color: rgb(234,238,239);   
 }
