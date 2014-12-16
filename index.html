@@ -9,7 +9,6 @@
         <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css>
         <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js></script>
 
-        
         <script>
             $(document).ready(function(){
                 // Creates a new variable for the date
@@ -32,6 +31,12 @@
                 $('head').append('<link rel="stylesheet" type="text/css" href="styles/'+stylesheet+'.css">');
             });
         </script>
+        
+        <style>
+        .header3 {
+            color: #000;   
+        }
+        </style>
     </HEAD>
     <BODY>
         
@@ -59,8 +64,9 @@
                 </div>
             </div>
         </div>
+        
         <div class="container">
-            <div class="jumbotron text-center">
+            <div class="jumbotron text-center bg">
                 <h1>Hello, Interns.</h1>
                 <p>You're safe now. You are sheltered from the massive swirling storm of code that sits right at your fingertips. You're learning how to control it. Channel it. Bend it to your will. Welcome to the life of a programmer.</p>
             </div>
@@ -68,9 +74,51 @@
         
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h3><a href=#></a></h3>
+                <div class="col-md-3 text-center">
+                    <div class="padding bg">
+                        <h3><a href=# class="header3">HTML Quick Guide</a></h3>
+                        <p>Forgot how to use that one tag? Click on the button the see the cheetsheet! Or, if you wanna do it the hard way, it's under Quick Guides in the navbar too!</p>  <br>
+                        <a href="guides/htmlGuide.html" class="btn btn-primary a">HTML</a>
+                    </div>
                 </div>
+                <div class="col-md-3 text-center">
+                    <div class="padding bg">
+                        <h3><a href=# class="header3">Javascript Quick Guide</a></h3>
+                        <p>Those functions are pretty hard to remember sometimes. This quick guide will help you figure it out! (Also includes JQuery)</p>  
+                        <br>
+                        <a href="guides/jsGuide.html" class="btn btn-primary a">JavaScript</a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="padding bg">
+                        <h3><a href="guides/cssGuide.html" class="header3">CSS Quick Guide</a></h3>
+                        <p>Need to make your page look good? Don't remember what you need to put in the stylesheet to make it look that good? Click here to find out! (Also includes Bootstrap)</p>  
+                        <a href="guides/cssGuide.html" class="btn btn-primary a">CSS</a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="padding bg">
+                        <h3><a href=# class="header3">Have a question?</a></h3>
+                        <p>Ask us on our forums! There probably aren't very many interns, but (almost) everyone working at Sycamore would be glad to share their knowledge with you!</p>
+                        <br>
+                        <a href="forum.html" class="btn btn-primary a">Forum</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="nav navbar navbar-fixed-bottom">
+                <div class="navbar-brand">
+                    <h4>Got any ideas?</h4>
+                </div>
+                <div class="navbar-brand">
+                    <h4>Send them to us!</h4>
+                </div>
+                <div class="navbar-brand text-center ">
+                    <a class="btn btn-info">Go!</a>
+                </div>
+                <div class="navbar-brand"><h4>Or...make it yourself.</h4></div>
             </div>
         </div>
     </BODY>
