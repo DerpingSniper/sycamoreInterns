@@ -8,7 +8,11 @@
 }
 
 a {
-    color: #FFFFFF   
+    color: #FFF;   
+}
+
+a:visited {
+    color: #FFF;   
 }
 
 body {
